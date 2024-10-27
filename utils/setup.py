@@ -1,8 +1,19 @@
 import os
 
+from certifi import contents
+
+
 def setup():
+    if os.path.exists("./results"):
+        return
+    else:
+        os.mkdir("results")
+    if os.path.exists("./logs"):
+        return
+    else:
+        os.mkdir("logs")
     if os.path.exists("./files.json"):
-        print("File exists")
+        print("File List exists")
     else:
         print("File does not exist")
         create_def_files = input("[Y/n] Sould create with Default values?\n» ")
