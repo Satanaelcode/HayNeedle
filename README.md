@@ -12,7 +12,7 @@ Current features:
 <ls>
 * Debug Logging 
 * Pooling of the requests
-* Config System
+* Config System (W.I.P)
 </ls>
 </br>
 
